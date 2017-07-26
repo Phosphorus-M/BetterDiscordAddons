@@ -6,7 +6,7 @@ var appName = "Better Formatting Redux";
 var appAuthor = "Zerebos";
 var appVersion = "2.0.0";
 
-var appDescription = "Enables different types of formatting in standard Discord chat. Support Server: bit.ly/ZeresServer";
+var appDescription = "Permite diferentes tipos de formato en los chats estándares de Discord.. Servidor de soporte: bit.ly/ZeresServer";
 
 var appNameShort = "BFRedux"; // Used for namespacing, settings, and logging
 
@@ -206,7 +206,7 @@ class BFRedux {
 		this.upsideDownList = " ¡\"#$%⅋,)(*+'-˙/0ƖᄅƐㄣϛ9ㄥ86:;>=<¿@∀qƆpƎℲפHIſʞ˥WNOԀQɹS┴∩ΛMX⅄Z]\\[^‾,ɐqɔpǝɟƃɥᴉɾʞlɯuodbɹsʇnʌʍxʎz}|{";
 		this.fullwidthList = "　！＂＃＄％＆＇（）＊＋，－．／０１２３４５６７８９：；＜＝＞？＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝";
 
-		this.toolbarString = "<div class='bf-toolbar'><div class='bf-arrow'></div><div data-type='discord' data-name='bold'><b>Bold</b></div><div data-type='discord' data-name='italic'><i>Italic</i></div><div data-type='discord' data-name='underline'><u>Underline</u></div><div data-type='discord' data-name='strikethrough'><s>Strikethrough</s></div><div style='font-family:monospace;' data-type='discord' data-name='code'>Code</div><div data-type='bfredux' data-name='superscript'>ˢᵘᵖᵉʳˢᶜʳᶦᵖᵗ</div><div data-type='bfredux' data-name='smallcaps'>SᴍᴀʟʟCᴀᴘs</div><div data-type='bfredux' data-name='fullwidth'>Ｆｕｌｌｗｉｄｔｈ</div><div data-type='bfredux' data-name='upsidedown'>uʍopǝpᴉsd∩</div><div data-type='bfredux' data-name='varied'>VaRiEd CaPs</div></div></div>";
+		this.toolbarString = "<div class='bf-toolbar'><div class='bf-arrow'></div><div data-type='discord' data-name='bold'><b>Negrita</b></div><div data-type='discord' data-name='italic'><i>Italica</i></div><div data-type='discord' data-name='underline'><u>Subrayado</u></div><div data-type='discord' data-name='strikethrough'><s>Tachado</s></div><div style='font-family:monospace;' data-type='discord' data-name='code'>Codigo</div><div data-type='bfredux' data-name='superscript'>ˢᵘᵖᵉʳᴵⁿᵈᶦᶜᵉ</div><div data-type='bfredux' data-name='smallcaps'>SᴍᴀʟʟCᴀᴘs</div><div data-type='bfredux' data-name='fullwidth'>Ｆｕｌｌｗｉｄｔｈ</div><div data-type='bfredux' data-name='upsidedown'>ɐʇlǝnʌ ɹɐp</div><div data-type='bfredux' data-name='varied'>LeTrAs VaRiAdAs</div></div></div>";
 		
 		this.discordWrappers = {bold: "**", italic: "*", underline: "__", strikethrough: "~~", code: "`"}
 
@@ -243,7 +243,7 @@ class BFRedux {
 				this.settings[settingType] = $.extend({}, this.settings[settingType], bdPluginStorage.get(appNameShort, settingType));
 			}
 		} catch (err) {
-			console.warn(appNameShort, "unable to load settings:", err);
+			console.warn(appNameShort, "No se puede cargar la configuración:", err);
 		}
 	}
 
@@ -253,7 +253,7 @@ class BFRedux {
 				bdPluginStorage.set(appNameShort, settingType, this.settings[settingType]);
 			}
 		} catch (err) {
-			console.warn(appNameShort, "unable to save settings:", err);
+			console.warn(appNameShort, "No se puede guardar la configuración:", err);
 		}
 	}
 	
@@ -465,36 +465,36 @@ class BFRedux {
 		if (this.hasUpdate) {
 			var header = $('<div class="formNotice-2tZsrh margin-bottom-20 padded cardWarning-31DHBH card-3DrRmC">').css("background", SettingField.getAccentColor()).css("border-color", "transparent")
 			var headerText = $('<div class="default-3bB32Y formText-1L-zZB formNoticeBody-1C0wup whiteText-32USMe modeDefault-389VjU primary-2giqSn">')
-			headerText.html("Update Available! Your version: " + this.getVersion() + " | Current version: " + this.remoteVersion + "<br>Get it on Zere's GitHub! http://bit.ly/ZerebosBD")
+			headerText.html("¡Actualización disponible! Tu versión: " + this.getVersion() + " | Versión actual: " + this.remoteVersion + "<br>Consíguela en el GitHub de Phosphorus!(Versión en Español) https://github.com/Phosphorus-M/BetterDiscordAddons</br>O consíguela en el GitHub de Zere! (Versión Oficial y en Ingles) http://bit.ly/ZerebosBDs")
 			headerText.css("line-height", "150%")
 			headerText.appendTo(header)
 			header.appendTo(panel)
 		}
 		
-		new ControlGroup("Wrapper Options", () => {this.saveSettings()}).appendTo(panel).append(
-			new TextSetting("Superscript", "The wrapper for superscripted text.", this.settings.wrappers.superscript, this.defaultSettings.wrappers.superscript,
+		new ControlGroup("Opciones de marcado", () => {this.saveSettings()}).appendTo(panel).append(
+			new TextSetting("Superíndice", "El marcado para superíndice.", this.settings.wrappers.superscript, this.defaultSettings.wrappers.superscript,
 							(text) => {this.settings.wrappers.superscript = text != "" ? text : this.defaultSettings.wrappers.superscript}),
-			new TextSetting("Smallcaps", "The wrapper to make Smallcaps.", this.settings.wrappers.smallcaps, this.defaultSettings.wrappers.smallcaps,
+			new TextSetting("Smallcaps", "El marcado para hacer Smallcaps.", this.settings.wrappers.smallcaps, this.defaultSettings.wrappers.smallcaps,
 							(text) => {this.settings.wrappers.smallcaps = text != "" ? text : this.defaultSettings.wrappers.smallcaps}),
-			new TextSetting("Full Width", "The wrapper for E X P A N D E D  T E X T.", this.settings.wrappers.fullwidth, this.defaultSettings.wrappers.fullwidth,
+			new TextSetting("Full Width", "El marcado para E X P A N D E D  T E X T.", this.settings.wrappers.fullwidth, this.defaultSettings.wrappers.fullwidth,
 							(text) => {this.settings.wrappers.fullwidth = text != "" ? text : this.defaultSettings.wrappers.fullwidth}),
-			new TextSetting("Upsidedown", "The wrapper to flip the text upsidedown.", this.settings.wrappers.upsidedown, this.defaultSettings.wrappers.upsidedown,
+			new TextSetting("Upsidedown", "El marcado para dar vuelta el texto.", this.settings.wrappers.upsidedown, this.defaultSettings.wrappers.upsidedown,
 							(text) => {this.settings.wrappers.upsidedown = text != "" ? text : this.defaultSettings.wrappers.upsidedown}),
-			new TextSetting("Varied Caps", "The wrapper to VaRy the capitalization.", this.settings.wrappers.varied, this.defaultSettings.wrappers.varied,
+			new TextSetting("Varied Caps", "El marcado para VaRiAr entre mayusculas y minusculas.", this.settings.wrappers.varied, this.defaultSettings.wrappers.varied,
 							(text) => {this.settings.wrappers.varied = text != "" ? text : this.defaultSettings.wrappers.varied})
 		)
 		
-		new ControlGroup("Formatting Options", () => {this.saveSettings()}).appendTo(panel).append(
-			new PillSetting("Fullwidth Style", "Which style of fullwidth formatting should be used.", "T H I S", "ｔｈｉｓ",
+		new ControlGroup("Opciones de formato", () => {this.saveSettings()}).appendTo(panel).append(
+			new PillSetting("Estilo Fullwidth", "Qué estilo de formato de fullwidth debe ser utilizado.", "Ｅ Ｓ Ｔ Ｅ", "ｅｓｔｅ",
 								this.settings.formatting.fullWidthMap, (checked) => {this.settings.formatting.fullWidthMap = checked}), 
-			new CheckboxSetting("Reorder Upsidedown Text", "Having this enabled reorders the upside down text to make it in-order.",
+			new CheckboxSetting("Reordenar el texto a la inversa", "Una vez habilitado, el texto invertido se vuelve a ordenar.",
 								this.settings.formatting.reorderUpsidedown, (checked) => {this.settings.formatting.reorderUpsidedown = checked}),
-			new CheckboxSetting("Start VaRiEd Caps With Capital", "Enabling this starts a varied text string with a capital.",
+			new CheckboxSetting("Usar VaRiEdAd en letras", "Habilitar esto inicia una cadena de texto variada con un capital.",
 								this.settings.formatting.startCaps, (checked) => {this.settings.formatting.startCaps = checked})
 		)
 		
-		new ControlGroup("Plugin Options", () => {this.saveSettings()}).appendTo(panel).append(
-			new CheckboxSetting("Open On Hover", "Enabling this makes you able to open the menu just by hovering the arrow instead of clicking it.", this.settings.plugin.hoverOpen,
+		new ControlGroup("Opciones del plugin.", () => {this.saveSettings()}).appendTo(panel).append(
+			new CheckboxSetting("Abir al pasar el mouse", "Habilitar esto te hace capaz de abrir el menú simplemente colocando el mouse encima en lugar de hacer clic.", this.settings.plugin.hoverOpen,
 				(checked) => {
 					 this.settings.plugin.hoverOpen = checked;
 					 if (checked) {
@@ -506,17 +506,17 @@ class BFRedux {
 					 }
 				}
 			),
-			new CheckboxSetting("Close On Send", "This option will close the toolbar when the message is sent when \"Open On Hover\" is disabled.",
+			new CheckboxSetting("Cerrar al mandar", "Esta opción cerrará la barra de herramientas cuando el mensaje se envía cuando \"Abrir al pasar el mouse\" este desactivado.",
 								this.settings.plugin.closeOnSend, (checked) => {this.settings.plugin.closeOnSend = checked;}),
-			new PillSetting("Format Chaining", "Swaps priority of wrappers between inner first and outer first. Check the GitHub for more info.", "Inner", "Outer",
+			new PillSetting("Encadenamiento de formato", "Cambia la prioridad de las envolturas entre primera interna y externa primera.", "Interior", "Exterior",
 								this.settings.plugin.chainFormats, (checked) => {this.settings.plugin.chainFormats = checked;})
 		)
 		
-		new ControlGroup("Style Options", () => {this.saveSettings()}).appendTo(panel).append(
-			new PillSetting("Toolbar Location", "This option enables swapping toolbar from right side to left side.", "Left", "Right",
+		new ControlGroup("Opciones de estilo", () => {this.saveSettings()}).appendTo(panel).append(
+			new PillSetting("Ubicación de la barra de herramientas", "Esta opción permite cambiar la barra de herramientas del lado derecho al lado izquierdo.", "Izquierda", "Derecha",
 							this.settings.style.rightSide, (checked) => {this.settings.style.rightSide = checked; this.updateSide();}),
-			new SliderSetting("Opacity", "This allows the toolbar to be partially seethrough.", 0, 1, 0.01, this.settings.style.opacity, (val) => {this.settings.style.opacity = val; this.updateOpacity();}),
-			new SliderSetting("Font Size", "Adjust the font size between 0 and 100%.", 0, 100, 1, this.settings.style.fontSize, (val) => {this.settings.style.fontSize = val+"%"; this.updateFontSize();}).setLabelUnit("%")
+			new SliderSetting("Opacidad", "Esto permite que la barra de herramientas se vea parcialmente.", 0, 1, 0.01, this.settings.style.opacity, (val) => {this.settings.style.opacity = val; this.updateOpacity();}),
+			new SliderSetting("Tamaño de fuente", "Ajuste el tamaño de fuente entre 0 y 100%.", 0, 100, 1, this.settings.style.fontSize, (val) => {this.settings.style.fontSize = val+"%"; this.updateFontSize();}).setLabelUnit("%")
 		)
 			
 		var bfr = this;
@@ -527,7 +527,7 @@ class BFRedux {
 			panel.empty()
 			bfr.generateSettings(panel)
 		});
-		resetButton.text("Reset To Defaults");
+		resetButton.text("Reiniciar configuración");
 		resetButton.css("float", "right");
 		resetButton.attr("type","button")
 
