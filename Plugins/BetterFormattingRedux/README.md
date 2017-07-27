@@ -1,86 +1,86 @@
 # BetterFormattingRedux (BFRedux) - [Download](https://raw.githubusercontent.com/rauenzi/BetterDiscordAddons/master/Plugins/BetterFormattingRedux/BetterFormattingRedux.plugin.js)
 
-Lets you format your messages with buttons and adds more formatting options. For support and update announcements you can visit [Zere's server](http://discord.zackrauen.com/).
+Una re edición de BetterFormatting de Anxeal que incluye nuevas opciones y configuraciones. Para soporte y anuncios de actualizaciones tu puedes visitar [el servidor de Zere](http://discord.zackrauen.com/).
 
-**Note:** ~~Currently incompatible with Canary~~ Canary/PTB compatibility has been resolved.
+**Nota:** ~~Actualmente incompatible con Canary~~ La compatibilidad con Canary/PTB fue resuelta.
 
 ![BFRedux Demo](https://zippy.gfycat.com/HugeDeadDuckling.gif)
 
-Feel free to either DM me (Zerebos#7790) with any feature requests or bugs. Or just open an issue here on GitHub.
+Sientete libre de mandarle un mensaje directo a el creador del plugin (Zerebos#7790) con cualquier pedido de caracteristica o reporte de bugs. Solo abre una sugerencia [aquí en GitHub (En Ingles unicamente por favor.)](https://github.com/rauenzi/BetterDiscordAddons/issues).
 
-## Features
+## Caracteristicas
 
-### Formatting Toolbar
-BFRedux adds a handy toolbar to make formatting easier.
+### Barra de herramientas de formato
+BFRedux agrega una barra de herramientas útil para facilitar el formato.
 
-Click the buttons to insert tags or surround the selected text with tags.
+Haz clic en los botones para insertar etiquetas o rodear el texto seleccionado con etiquetas.
 
 ![BFRedux Demo](http://discord.zackrauen.com/BFRedux/bfredux.png)
 
-### New Formatting Options
+### Nuevas opciones de formato
 
-#### Superscript (^)
-`^Sample Text^` will show up as ˢᵃᵐᵖˡᵉ ᵀᵉˣᵗ
+#### SuperÍndice (^)
+`^Texto de Ejemplo^` deberia mostrarse como ᵀᵉˣᵗᵒ ᵈᵉ ᴱʲᵉᵐᵖˡᵒ
 
 #### Small Caps (%)
-`%Sample Text%` will show up as Sᴀᴍᴘʟᴇ Tᴇxᴛ
+`%Texto de Ejemplo%` deberia mostrarse como Tᴇxᴛᴏ ᴅᴇ Eᴊᴇᴍᴘʟᴏ
 
 #### Fullwidth (##)
-`##Sample Text##` will show up as Ｓａｍｐｌｅ　Ｔｅｘｔ or S A M P L E  T E X T
+`##Texto de Ejemplo##` deberia mostrarse como Ｔｅｘｔｏ　ｄｅ　Ｅｊｅｍｐｌｏ o T E X T O   D E   E J E M P L O
 
-#### Upsidedown (&&)
-`&&Sample Text&&` will show up as ʇxǝ┴ ǝldɯɐS or Sɐɯdlǝ ┴ǝxʇ
+#### Invertir (&&)
+`&&Texto de Ejemplo&&` deberia mostrarse como oldɯǝɾƎ ǝp oʇxǝ┴ o ┴ǝxʇo pǝ Ǝɾǝɯdlo
 
-#### Varied Caps (||)
-`||Sample Text||` will show up as SaMpLe TeXt or sAmPlE tExT
+#### Letras Variadas (||)
+`||Texto de Ejemplo||` deberia mostrarse como TeXtO dE eJeMpLo o tExTo De EjEmPlO
 
 #### Escaping Unwanted Tags (\\)
-Put a backslash before the tags if you want them to be rendered normally.
+Ponga una barra invertida antes de las etiquetas si desea que se representen normalmente.
 
-`\##Sample Text\##` will show up as \##Sample Text\##
+`\##Texto de Ejemplo\##` deberia mostrarse como \##Texto de Ejemplo\##
 
-## Plugin Settings
+## Opciones del Plugin
 
-The settings can be found in Settings > BetterDiscord > Plugins
+Los ajustes se pueden encontrar en Ajustes del Usuario > BetterDiscord > Plugins
 
-Note: There is no save button to click, settings update automatically.
+Nota: No hay botón Guardar para hacer clic, la configuración se actualiza automáticamente.
 
-### Wrappers
-The default wrappers (`^`, `%`, `##`, `&&`, `||`) can all be customized in the settings panel. They can be any symbol or letters of any length.
+### Etiquetas
+Las etiquetas predeterminadas (`^`, `%`, `##`, `&&`, `||`) se pueden personalizar en el panel de configuración. Pueden ser cualquier símbolo o letras de cualquier longitud.
 
 ![BFRedux Wrappers](http://discord.zackrauen.com/BFRedux/wrappers.png)
 
-### Formatting
- - The fullwidth format can switch between Ｓａｍｐｌｅ　Ｔｅｘｔ and S A M P L E  T E X T.
- - The upsidedown text can switch between ʇxǝ┴ ǝldɯɐS and Sɐɯdlǝ ┴ǝxʇ.
- - The varied caps can switch between SaMpLe TeXt and sAmPlE tExT. (Change whether to start with a capital)
+### Formatos
+ - El formato de fullwidth puede cambiar entre Ｔｅｘｔｏ　ｄｅ　Ｅｊｅｍｐｌｏ y T E X T O   D E   E J E M P L O
+ - El texto invertido puede cambiar entre oldɯǝɾƎ ǝp oʇxǝ┴ y ┴ǝxʇo pǝ Ǝɾǝɯdlo.
+ - Las letras variadas pueden cambiar entre TeXtO dE eJeMpLo and tExTo De EjEmPlO. (Cambia si se debe comenzar por letra capital o no)
  
 ![BFRedux Formatting](http://discord.zackrauen.com/BFRedux/formatting_new.png)
  
-### Functional Plugin Settings
+### Funcion de Configuración del Plugin
 ![BFRedux Chaining](http://discord.zackrauen.com/BFRedux/functional.png)
 
- - You can change between the default hover mode (from above), or click to see toolbar.
+ - Tu puedes cambiar la opción de ver la barra de herramientas entre pasar el mouse por encima (desde arriba), o haciendo click.
  
 ![BFRedux Click Mode](https://zippy.gfycat.com/RectangularGargantuanIndianjackal.gif)
- - Optionally, you can make it disappear when the message is sent
+ - Opcionalmente, puede hacer que desaparezca cuando se envía el mensaje
  
 ![BFRedux Send Clear](https://zippy.gfycat.com/IllfatedDimpledGalapagossealion.gif)
 
- - You can also switch format chaining order from outside first to inside first which means:
+ - También puede cambiar el orden de encadenamiento de formato desde el exterior primero al interior primero lo que significa:
  
-`&&##Sample Text##&&` will give you ｔｘｅＴ　ｅｌｐｍａＳ instead of ʇｘǝ┴　ǝｌｄɯɐＳ (May not appear right in browser)
+`&&##Texto de Ejemplo##&&` dara ｏｌｐｍｅｊＥ　ｅｄ　ｏｔｘｅＴ en lugar de ｏｌｄɯǝɾƎ　ǝｐ　ｏʇｘǝ┴ (Puede que no se muestre bien en algunos navegadores)
 
-`##&&Sample Text&&##` will give you ʇｘǝ┴　ǝｌｄɯɐＳ instead of ＆＆Ｓａｍｐｌｅ　Ｔｅｘｔ＆＆ (May not appear right in browser)
+`##&&Texto de Ejemplo&&##` dara ｏｌｄɯǝɾƎ　ǝｐ　ｏʇｘǝ┴ en lugar de ＆＆Ｔｅｘｔｏ　ｄｅ　Ｅｊｅｍｐｌｏ＆＆ (Puede que no se muestre bien en algunos navegadores)
 
  ![BFRedux Chaining](http://discord.zackrauen.com/BFRedux/chaining_order.png)
  
-### Style Settings
+### Configuración del Estilo
 ![BFRedux Style](http://discord.zackrauen.com/BFRedux/style.png)
 
- - Change the opacity of the toolbar
- - Change the size of the text
- - Swap the toolbar (and arrow) from the right side (above) to the left side
+ - Cambiar la opacidad de la barra de herramientas
+ - Cambiar el tamaño del texto
+ - Cambiar la barra de herramientas (y la flecha) desde el lado derecho (encima) a el lado izquierdo
  
  ![BFRedux Sideswap](https://zippy.gfycat.com/FlusteredViciousEnglishpointer.gif)
 
